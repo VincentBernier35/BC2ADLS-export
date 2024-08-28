@@ -21,6 +21,16 @@ page 82567 "ADLSE Field API"
         {
             repeater(GroupName)
             {
+                field(id; Rec.SystemId)
+                {
+                    Caption = 'id';
+                    Editable = false;
+                }
+                field(lastModifiedDateTime; Rec.SystemModifiedAt)
+                {
+                    Caption = 'lastModifiedDateTime';
+                    Editable = false;
+                }
                 field(tableId; Rec."Table ID") { }
                 field(fieldId; Rec."Field ID") { }
                 field(enabled; Rec.Enabled) { }
@@ -31,6 +41,7 @@ page 82567 "ADLSE Field API"
                 field(systemRowVersion; Rec.SystemRowVersion)
                 {
                     Editable = false;
+                    Caption = 'system Row Version';
                 }
             }
         }

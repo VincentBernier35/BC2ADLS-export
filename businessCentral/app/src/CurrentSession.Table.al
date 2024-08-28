@@ -5,6 +5,10 @@ table 82565 "ADLSE Current Session"
     Access = Internal;
     DataClassification = SystemMetadata;
     DataPerCompany = false;
+    Caption = 'ADLSE Current Session';
+    Permissions =
+        tabledata "Active Session" = R,
+        tabledata "ADLSE Current Session" = RID;
 
     fields
     {
@@ -57,7 +61,7 @@ table 82565 "ADLSE Current Session"
         Rec."Session ID" := SessionId();
         Rec."Session Unique ID" := GetActiveSessionIDForSession(SessionId());
         Rec."Company Name" := CopyStr(CompanyName(), 1, 30);
-        if not Rec.Insert() then
+        if not Rec.Insert(true) then
             Error(InsertFailedErr, ADLSEUtil.GetTableCaption(ADLSETableID));
     end;
 
@@ -69,7 +73,7 @@ table 82565 "ADLSE Current Session"
         if not Rec.Get(ADLSETableID, CompanyName()) then
             exit;
         CustomDimensions.Add('Entity', TableCaption);
-        if not Rec.Delete() then
+        if not Rec.Delete(true) then
             ADLSEExecution.Log('ADLSE-036', StrSubstNo(CouldNotStopSessionErr, Rec."Session ID", CompanyName()), Verbosity::Error, CustomDimensions)
         else
             ADLSEExecution.Log('ADLSE-039', 'Session ended and was removed', Verbosity::Normal, CustomDimensions);
@@ -109,7 +113,7 @@ table 82565 "ADLSE Current Session"
                     Session.StopSession(Rec."Session ID", StrSubstNo(SessionTerminatedMsg, ADLSEUtil.GetTableCaption(Rec."Table ID")));
             until Rec.Next() = 0;
 
-        Rec.DeleteAll();
+        Rec.DeleteAll(true);
     end;
 
     local procedure IsSessionActive(): Boolean

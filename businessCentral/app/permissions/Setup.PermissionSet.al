@@ -7,7 +7,7 @@ permissionset 82560 "ADLSE - Setup"
     /// </summary>
     Access = Public;
     Assignable = true;
-    Caption = 'ADLS - Setup';
+    Caption = 'ADLSE - Setup', Locked = true;
 
     Permissions = tabledata "ADLSE Setup" = RIMD,
                   tabledata "ADLSE Table" = RIMD,
@@ -16,5 +16,5 @@ permissionset 82560 "ADLSE - Setup"
                   tabledata "ADLSE Current Session" = R,
                   tabledata "ADLSE Table Last Timestamp" = RID,
                   tabledata "ADLSE Run" = RD;
-    //   codeunit "ADLSE" = X; 
+
 }

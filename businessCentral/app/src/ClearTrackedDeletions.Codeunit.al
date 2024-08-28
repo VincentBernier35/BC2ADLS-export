@@ -29,7 +29,7 @@ codeunit 82573 "ADLSE Clear Tracked Deletions"
                 ADLSEDeletedRecord.SetRange("Table ID", ADLSETable."Table ID");
                 ADLSEDeletedRecord.SetFilter("Entry No.", '<=%1', ADLSETableLastTimestamp.GetDeletedLastEntryNo(ADLSETable."Table ID"));
                 if not ADLSEDeletedRecord.IsEmpty() then
-                    ADLSEDeletedRecord.DeleteAll();
+                    ADLSEDeletedRecord.DeleteAll(true);
 
                 ADLSETableLastTimestamp.SaveDeletedLastEntryNo(ADLSETable."Table ID", 0);
             until ADLSETable.Next() = 0;

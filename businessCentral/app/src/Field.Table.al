@@ -5,6 +5,10 @@ table 82562 "ADLSE Field"
     Access = Internal;
     DataClassification = CustomerContent;
     DataPerCompany = false;
+    Caption = 'ADLSE Field';
+    LookupPageId = "ADLSE Setup Fields";
+    DrillDownPageId = "ADLSE Setup Fields";
+
 
     fields
     {
@@ -13,6 +17,7 @@ table 82562 "ADLSE Field"
             Editable = false;
             Caption = 'Table ID';
             TableRelation = "ADLSE Table"."Table ID";
+            AllowInCustomizations = Always;
 
             trigger OnValidate()
             var
@@ -100,7 +105,7 @@ table 82562 "ADLSE Field"
                     Rec."Table ID" := Field.TableNo;
                     Rec."Field ID" := Field."No.";
                     Rec.Enabled := false;
-                    Rec.Insert();
+                    Rec.Insert(true);
                 end;
             until Field.Next() = 0;
     end;

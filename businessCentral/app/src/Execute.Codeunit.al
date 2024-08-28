@@ -138,7 +138,7 @@ codeunit 82561 "ADLSE Execute"
         if not SkipTimestampSorting then
             RecordRef.SetView(TimestampAscendingSortViewTxt);
         TimeStampFieldRef := RecordRef.Field(0); // 0 is the TimeStamp field
-        TimeStampFieldRef.SetFilter('>%1', UpdatedLastTimestamp);
+        TimeStampFieldRef.SetFilter('>%1', UpdatedLastTimeStamp);
     end;
 
     local procedure ExportTableUpdates(TableID: Integer; FieldIdList: List of [Integer]; ADLSECommunication: Codeunit "ADLSE Communication"; var UpdatedLastTimeStamp: BigInteger)
@@ -161,7 +161,7 @@ codeunit 82561 "ADLSE Execute"
         SetFilterForUpdates(TableID, UpdatedLastTimeStamp, ADLSESetup."Skip Timestamp Sorting On Recs", RecordRef, TimeStampFieldRef);
 
         foreach FieldId in FieldIdList do
-            if RecordRef.AddLoadFields(FieldID) then;
+            if RecordRef.AddLoadFields(FieldId) then;
 
         if not RecordRef.ReadPermission() then
             Error(InsufficientReadPermErr);
@@ -313,6 +313,7 @@ codeunit 82561 "ADLSE Execute"
             CustomDimensions.Add('Entity', TableCaption);
             ADLSEExecution.Log('ADLSE-037', 'Finished the export process', Verbosity::Normal, CustomDimensions);
         end;
+        // Commit is necessary here.
         Commit();
 
         // This export session is soon going to end. Start up a new one from 

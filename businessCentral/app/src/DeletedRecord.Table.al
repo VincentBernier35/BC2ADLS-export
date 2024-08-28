@@ -4,6 +4,7 @@ table 82563 "ADLSE Deleted Record"
 {
     Access = Internal;
     DataClassification = SystemMetadata;
+    Caption = 'ADLSE Deleted Record';
 
     fields
     {

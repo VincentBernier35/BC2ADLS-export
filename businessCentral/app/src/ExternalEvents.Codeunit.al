@@ -237,7 +237,7 @@ codeunit 82574 "ADLSE External Events"
     end;
 
     [EventSubscriber(ObjectType::Table, Database::"ADLSE Table", OnAfterResetSelected, '', true, true)]
-    local procedure OnAfterResetSelected(ADLSETable: Record "ADLSE Table");
+    local procedure OnAfterResetSelected(ADLSETable: Record "ADLSE Table")
     begin
         MyBusinessEventOnAfterResetSelected(ADLSETable.SystemId, ADLSETable."Table ID");
     end;

@@ -31,6 +31,12 @@ page 82571 "ADLSE CurrentSession API"
                 field(systemRowVersion; Rec.SystemRowVersion)
                 {
                     Editable = false;
+                    Caption = 'systemRowVersion';
+                }
+                field(lastModifiedDateTime; Rec.SystemModifiedAt)
+                {
+                    Editable = false;
+                    Caption = 'lastModifiedDateTime';
                 }
             }
         }

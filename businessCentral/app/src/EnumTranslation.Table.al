@@ -3,6 +3,8 @@ table 82567 "ADLSE Enum Translation"
     DataClassification = ToBeClassified;
     Caption = 'ADLSE Enum Translation';
     Access = Internal;
+    LookupPageId = "ADLSE Enum Translations";
+    DrillDownPageId = "ADLSE Enum Translations";
 
     fields
     {
@@ -10,21 +12,26 @@ table 82567 "ADLSE Enum Translation"
         {
             DataClassification = SystemMetadata;
             Caption = 'Table Id';
+            AllowInCustomizations = Always;
         }
         field(2; "Compliant Table Name"; Text[40])
         {
             DataClassification = SystemMetadata;
             Caption = 'Compliant Table Name';
+            ToolTip = 'Specifies the name of the table that is compliant with Data Lake standards.';
         }
         field(3; "Field Id"; Integer)
         {
             DataClassification = SystemMetadata;
             Caption = 'Field Id';
+            AllowInCustomizations = Always;
         }
         field(4; "Compliant Field Name"; Text[40])
         {
             DataClassification = SystemMetadata;
             Caption = 'Compliant Object Name';
+            ToolTip = 'Compliant Field Name';
+
         }
     }
 
@@ -45,7 +52,7 @@ table 82567 "ADLSE Enum Translation"
         Rec."Compliant Table Name" := CopyStr(ADLSEUtil.GetDataLakeCompliantTableName(TableId), 1, MaxStrLen((Rec."Compliant Table Name")));
         Rec."Field Id" := FieldNo;
         Rec."Compliant Field Name" := CopyStr(ADLSEUtil.GetDataLakeCompliantFieldName(FieldName, FieldNo), 1, MaxStrLen((Rec."Compliant Field Name")));
-        Rec.Insert();
+        Rec.Insert(true);
     end;
 
     procedure RefreshOptions()
@@ -58,8 +65,8 @@ table 82567 "ADLSE Enum Translation"
         ADLSEExternalEvents: Codeunit "ADLSE External Events";
         ADLSERecordRef: RecordRef;
     begin
-        ADLSEEnumTranslation.DeleteAll();
-        ADLSEEnumTranslationLang.DeleteAll();
+        ADLSEEnumTranslation.DeleteAll(true);
+        ADLSEEnumTranslationLang.DeleteAll(true);
 
         if ADLSETable.FindSet() then
             repeat
@@ -95,19 +102,24 @@ table 82567 "ADLSE Enum Translation"
         i: Integer;
         x: Integer;
         Translations: List of [Text];
+        TranslationCode: Code[10];
     begin
         ADLSESetup.GetSingleton();
         FieldRef := ADLSERecordRef.Field(FieldRec."No.");
         InsertEnum(FieldRec.TableNo, FieldRec."No.", FieldRec.FieldName);
+
         for i := 1 to FieldRef.EnumValueCount() do begin
-            //Insert language captions
+            // Insert language captions
             Translations := ADLSESetup.Translations.Split(';');
             Translations.Remove('');
+
             for x := 1 to Translations.Count() do begin
-                TranslationHelper.SetGlobalLanguageByCode(Translations.Get(x));
-                ADLSEEnumTranslationLang.InsertEnumLanguage(Translations.Get(x), FieldRec.TableNo, FieldRec."No.", FieldRec.FieldName, FieldRef.GetEnumValueOrdinal(i), FieldRef.GetEnumValueCaption(i));
+                TranslationCode := CopyStr(Translations.Get(x), 1, MaxStrLen(TranslationCode));
+                TranslationHelper.SetGlobalLanguageByCode(TranslationCode);
+                ADLSEEnumTranslationLang.InsertEnumLanguage(TranslationCode, FieldRec.TableNo, FieldRec."No.", FieldRec.FieldName, FieldRef.GetEnumValueOrdinal(i), FieldRef.GetEnumValueCaption(i));
             end;
         end;
+
         TranslationHelper.RestoreGlobalLanguage();
     end;
 }
