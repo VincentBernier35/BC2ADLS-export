@@ -5,9 +5,24 @@ enum 82561 "ADLSE Http Method"
     Access = Internal;
     Extensible = false;
 
-    value(0; Get) { }
-    value(1; Put) { }
-    value(2; Delete) { }
-    value(3; Patch) { }
-    value(4; Head) { }
+    value(1; Get)
+    {
+        Caption = 'HTTP GET Method';
+    }
+    value(2; Put)
+    {
+        Caption = 'HTTP PUT Method';
+    }
+    value(3; Delete)
+    {
+        Caption = 'HTTP DELETE Method';
+    }
+    value(4; Patch)
+    {
+        Caption = 'HTTP PATCH Method';
+    }
+    value(5; Head)
+    {
+        Caption = 'HTTP HEAD Method';
+    }
 }

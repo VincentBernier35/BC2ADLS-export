@@ -32,6 +32,7 @@ permissionset 82561 "ADLSE - Execute"
                 codeunit "ADLSE Credentials" = X,
                 codeunit "ADLSE Gen 2 Util" = X,
                 codeunit "ADLSE Http" = X,
+                codeunit "ADLSE Installer" = X,
                 page "ADLSE CurrentSession API" = X,
                 page "ADLSE Enum Translations Lang" = X,
                 page "ADLSE Enum Translations" = X,
