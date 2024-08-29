@@ -115,6 +115,7 @@ codeunit 82574 "ADLSE External Events"
         Url := ADLSEExternalEventsHelper.CreateLink(ADLSEFieldApiUrlTok, ADLSESetup.SystemId);
         WebClientUrl := CopyStr(GetUrl(ClientType::Web, CompanyName(), ObjectType::Page, Page::"ADLSE Setup", ADLSESetup), 1, MaxStrLen(WebClientUrl));
         MyBusinessOnExportFinished(ADLSESetup.SystemId, ADLSESetup."Storage Type", Url, WebClientUrl);
+
     end;
 
     internal procedure OnExportFinished(ADLSESetup: Record "ADLSE Setup"; ADLSETable: Record "ADLSE Table")

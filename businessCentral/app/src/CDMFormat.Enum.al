@@ -9,12 +9,12 @@ enum 82562 "ADLSE CDM Format"
     Access = Internal;
     Extensible = false;
 
-    value(0; Csv)
+    value(1; Csv)
     {
         Caption = 'CSV';
     }
 
-    value(1; Parquet)
+    value(2; Parquet)
     {
         Caption = 'Parquet';
     }

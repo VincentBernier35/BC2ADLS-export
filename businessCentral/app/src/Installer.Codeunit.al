@@ -51,7 +51,7 @@ codeunit 82571 "ADLSE Installer"
         foreach TableID in InvalidFieldsMap.Keys() do begin
             ADLSETable.Get(TableID);
             ADLSETable.Enabled := false;
-            ADLSETable.Modify();
+            ADLSETable.Modify(true);
 
             Clear(CustomDimensions);
             CustomDimensions.Add('Entity', ADLSEUtil.GetTableCaption(TableID));

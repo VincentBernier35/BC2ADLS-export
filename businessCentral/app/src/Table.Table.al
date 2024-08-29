@@ -5,6 +5,7 @@ table 82561 "ADLSE Table"
     Access = Internal;
     DataClassification = CustomerContent;
     DataPerCompany = false;
+    Caption = 'ADLSE Table';
 
     fields
     {
@@ -12,6 +13,7 @@ table 82561 "ADLSE Table"
         {
             Editable = false;
             Caption = 'Table ID';
+            AllowInCustomizations = Always;
         }
         field(2; State; Integer)
         {
@@ -24,6 +26,7 @@ table 82561 "ADLSE Table"
         {
             Editable = false;
             Caption = 'Enabled';
+            ToolTip = 'Specifies the state of the table. Set this checkmark to export this table, otherwise not.';
 
             trigger OnValidate()
             var
@@ -78,13 +81,13 @@ table 82561 "ADLSE Table"
         ADLSESetup.SchemaExported();
 
         ADLSETableField.SetRange("Table ID", Rec."Table ID");
-        ADLSETableField.DeleteAll();
+        ADLSETableField.DeleteAll(true);
 
         ADLSEDeletedRecord.SetRange("Table ID", Rec."Table ID");
-        ADLSEDeletedRecord.DeleteAll();
+        ADLSEDeletedRecord.DeleteAll(true);
 
         ADLSETableLastTimestamp.SetRange("Table ID", Rec."Table ID");
-        ADLSETableLastTimestamp.DeleteAll();
+        ADLSETableLastTimestamp.DeleteAll(true);
 
         ADLSEExternalEvents.OnDeleteTable(Rec);
     end;
@@ -160,10 +163,10 @@ table 82561 "ADLSE Table"
             Error(TableExportingDataErr, ADLSEUtil.GetTableCaption(Rec."Table ID"));
     end;
 
-    local procedure GetLastRunState(): enum "ADLSE Run State"
+    local procedure GetLastRunState(): Enum "ADLSE Run State"
     var
         ADLSERun: Record "ADLSE Run";
-        LastState: enum "ADLSE Run State";
+        LastState: Enum "ADLSE Run State";
         LastStarted: DateTime;
         LastErrorText: Text[2048];
     begin
@@ -183,14 +186,14 @@ table 82561 "ADLSE Table"
             repeat
                 if not Rec.Enabled then begin
                     Rec.Enabled := true;
-                    Rec.Modify();
+                    Rec.Modify(true);
                 end;
 
                 ADLSETableLastTimestamp.SaveUpdatedLastTimestamp(Rec."Table ID", 0);
                 ADLSETableLastTimestamp.SaveDeletedLastEntryNo(Rec."Table ID", 0);
 
                 ADLSEDeletedRecord.SetRange("Table ID", Rec."Table ID");
-                ADLSEDeletedRecord.DeleteAll();
+                ADLSEDeletedRecord.DeleteAll(true);
 
                 ADLSESetup.GetSingleton();
                 if (ADLSESetup."Delete Table") then
@@ -257,13 +260,13 @@ table 82561 "ADLSE Table"
             repeat
                 if (ADLSEFields.CanFieldBeEnabled()) then begin
                     ADLSEFields.Enabled := true;
-                    ADLSEFields.Modify();
+                    ADLSEFields.Modify(true);
                 end;
             until ADLSEFields.Next() = 0;
     end;
 
     [IntegrationEvent(false, false)]
-    local procedure OnAfterResetSelected(ADLSETable: record "ADLSE Table")
+    local procedure OnAfterResetSelected(ADLSETable: Record "ADLSE Table")
     begin
 
     end;

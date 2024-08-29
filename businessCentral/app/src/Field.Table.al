@@ -31,10 +31,12 @@ table 82562 "ADLSE Field"
         {
             Editable = false;
             Caption = 'Field ID';
+            ToolTip = 'Specifies the ID of the field to be exported.';
         }
         field(3; Enabled; Boolean)
         {
             Caption = 'Enabled';
+            ToolTip = 'Specifies if the field will be exported.';
 
             trigger OnValidate()
             var
@@ -51,6 +53,7 @@ table 82562 "ADLSE Field"
             Caption = 'Field';
             Editable = false;
             FieldClass = FlowField;
+            ToolTip = 'Specifies the name of the field to be exported.';
             CalcFormula = lookup(Field."Field Caption" where("No." = field("Field ID"), TableNo = field("Table ID")));
         }
     }

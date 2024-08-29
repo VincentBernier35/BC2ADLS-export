@@ -103,7 +103,7 @@ codeunit 82572 "ADLSE Upgrade"
 
         if ADLSESetup."Multi- Company Export" then begin
             ADLSESetup."Schema Exported On" := CurrentDateTime();
-            ADLSESetup.Modify();
+            ADLSESetup.Modify(true);
         end;
     end;
 

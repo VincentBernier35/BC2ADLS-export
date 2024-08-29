@@ -6,11 +6,13 @@ table 82560 "ADLSE Setup"
     DataClassification = CustomerContent;
     DataPerCompany = false;
     DataCaptionFields = Container;
+    Caption = 'ADLSE Setup';
 
     fields
     {
         field(1; "Primary Key"; Integer)
         {
+            AllowInCustomizations = Always;
             Caption = 'Primary Key';
             Editable = false;
         }
@@ -18,6 +20,7 @@ table 82560 "ADLSE Setup"
         field(5; "Account Name"; Text[24])
         {
             Caption = 'Account Name';
+            ToolTip = 'Specifies the name of the storage account.';
 
             trigger OnValidate()
             begin
@@ -32,6 +35,8 @@ table 82560 "ADLSE Setup"
         field(2; Container; Text[63])
         {
             Caption = 'Container';
+            ToolTip = 'Specifies the name of the container where the data is going to be uploaded. Please refer to constraints on container names at https://docs.microsoft.com/en-us/rest/api/storageservices/naming-and-referencing-containers--blobs--and-metadata.';
+
 
             trigger OnValidate()
             begin
@@ -51,12 +56,14 @@ table 82560 "ADLSE Setup"
             // Refer max limit for put block calls (https://docs.microsoft.com/en-us/rest/api/storageservices/put-block#remarks)
             MaxValue = 4000;
             MinValue = 1;
+            ToolTip = 'Specifies the maximum size of the upload for each block of data in MiBs. A large value will reduce the number of iterations to upload the data but may interfear with the performance of other processes running on this environment.';
         }
 
         field(4; DataFormat; Enum "ADLSE CDM Format")
         {
             Caption = 'CDM data format';
             InitValue = Parquet;
+            ToolTip = 'Specifies the format in which to store the exported data in the ''data'' CDM folder. The Parquet format is recommended for storing the data with the best fidelity.';
         }
 
         field(10; Running; Boolean)
@@ -72,6 +79,7 @@ table 82560 "ADLSE Setup"
         {
             Caption = 'Emit telemetry';
             InitValue = true;
+            ToolTip = 'Specifies the translations for the enums used in the selected tables.';
         }
 
         field(15; "Multi- Company Export"; Boolean)
@@ -97,16 +105,19 @@ table 82560 "ADLSE Setup"
         {
             Caption = 'Skip row version sorting';
             InitValue = false;
+            ToolTip = 'Specifies that the records are not sorted as per their row version before exporting them to the lake. Enabling this may interfear with how incremental data is pushed to the lake in subsequent export runs- please refer to the documentation.';
         }
 
         field(25; "Storage Type"; Enum "ADLSE Storage Type")
         {
             Caption = 'Storage type';
+            ToolTip = 'Specifies the type of storage type to use.';
         }
 
         field(30; Workspace; Text[100])
         {
             Caption = 'Workspace';
+            ToolTip = 'Specifies the name of the Workspace where the data is going to be uploaded. This can be a name or a GUID.';
             trigger OnValidate()
             var
                 ValidGuid: Guid;
@@ -121,6 +132,7 @@ table 82560 "ADLSE Setup"
         field(31; Lakehouse; Text[100])
         {
             Caption = 'Lakehouse';
+            ToolTip = 'Specifies the name of the Lakehouse where the data is going to be uploaded. This can be a name or a GUID.';
             trigger OnValidate()
             var
                 ValidGuid: Guid;
@@ -134,15 +146,18 @@ table 82560 "ADLSE Setup"
         }
         field(35; "Schema Exported On"; DateTime)
         {
+            AllowInCustomizations = Always;
             Caption = 'Schema exported on';
         }
         field(40; "Translations"; Text[250])
         {
             Caption = 'Translations';
+            ToolTip = 'Translations.';
         }
         field(45; "Export Enum as Integer"; Boolean)
         {
             Caption = 'Export Enum as Integer';
+            ToolTip = 'Specifies if the enums will be exported as integers instead of strings. This is useful if you want to use the enums in Power BI.';
             trigger OnValidate()
             begin
                 if Rec."Schema Exported On" <> 0DT then
@@ -152,11 +167,13 @@ table 82560 "ADLSE Setup"
         field(50; "Delete Table"; Boolean)
         {
             Caption = 'Delete table';
+            ToolTip = 'Specifies if the table will be deleted if a reset of the table is done.';
         }
         field(55; "Maximum Retries"; Integer)
         {
             Caption = 'Maximum retries';
             InitValue = 0;
+            AllowInCustomizations = Always;
 
             trigger OnValidate()
             begin
@@ -172,12 +189,14 @@ table 82560 "ADLSE Setup"
         field(60; "Delivered DateTime"; Boolean)
         {
             Caption = 'Add delivered DateTime';
+            ToolTip = 'Specifies if the column DeliveredDateTime will be added to the CSV export file.';
         }
         //Add field for lookup to table companies
         field(65; "Export Company Database Tables"; Text[30])
         {
             Caption = 'Export Company Database Tables';
             TableRelation = Company.Name;
+            ToolTip = 'Specifies the company for the export of the database tables.';
         }
 
     }

@@ -21,25 +21,30 @@ page 82565 "ADLSE Table API"
         {
             repeater(GroupName)
             {
-                field(tableId; Rec."Table ID") { }
-                field(enabled; Rec.Enabled)
+                field("id"; Rec.SystemId)
                 {
                     Editable = false;
                 }
-                field(systemId; Rec.SystemId)
+                field("lastModifiedDateTime"; Rec.SystemModifiedAt)
+                {
+                    Editable = false;
+                }
+                field("tableId"; Rec."Table ID") { }
+                field(enabled; Rec.Enabled)
                 {
                     Editable = false;
                 }
                 field(systemRowVersion; Rec.SystemRowVersion)
                 {
                     Editable = false;
+                    Caption = 'systemRowVersion';
                 }
             }
             part(adlseField; "ADLSE Field API")
             {
                 EntityName = 'adlseField';
                 EntitySetName = 'adlseFields';
-                SubPageLink = "Table ID" = Field("Table ID");
+                SubPageLink = "Table ID" = field("Table ID");
             }
         }
     }
@@ -85,7 +90,7 @@ page 82565 "ADLSE Table API"
     [ServiceEnabled]
     procedure AddAllFields(var ActionContext: WebServiceActionContext)
     begin
-        rec.AddAllFields();
+        Rec.AddAllFields();
         SetActionResponse(ActionContext, Rec.SystemId);
     end;
 

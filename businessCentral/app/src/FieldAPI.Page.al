@@ -34,10 +34,7 @@ page 82567 "ADLSE Field API"
                 field(tableId; Rec."Table ID") { }
                 field(fieldId; Rec."Field ID") { }
                 field(enabled; Rec.Enabled) { }
-                field(systemId; Rec.SystemId)
-                {
-                    Editable = false;
-                }
+
                 field(systemRowVersion; Rec.SystemRowVersion)
                 {
                     Editable = false;

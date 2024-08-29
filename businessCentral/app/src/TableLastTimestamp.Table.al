@@ -10,6 +10,7 @@ table 82564 "ADLSE Table Last Timestamp"
     Access = Internal;
     DataClassification = CustomerContent;
     DataPerCompany = false;
+    Caption = 'ADLSE Table Last Timestamp';
 
     fields
     {
@@ -119,13 +120,13 @@ table 82564 "ADLSE Table Last Timestamp"
         Company := GetCompanyNameToLookFor(TableID);
         if Rec.Get(Company, TableID) then begin
             ChangeLastTimestamp(Timestamp, Upsert);
-            exit(Rec.Modify());
+            exit(Rec.Modify(true));
         end else begin
             Rec.Init();
             Rec."Company Name" := CopyStr(Company, 1, 30);
             Rec."Table ID" := TableID;
             ChangeLastTimestamp(Timestamp, Upsert);
-            exit(Rec.Insert());
+            exit(Rec.Insert(true));
         end;
     end;
 

@@ -114,7 +114,7 @@ codeunit 82569 "ADLSE Execution"
 
         ADLSESetup.GetSingleton();
         ADLSESetup."Schema Exported On" := CurrentDateTime();
-        ADLSESetup.Modify();
+        ADLSESetup.Modify(true);
 
         ADLSEExternalEvents.OnExportSchema(ADLSESetup);
     end;
@@ -126,7 +126,7 @@ codeunit 82569 "ADLSE Execution"
     begin
         ADLSESetup.GetSingleton();
         ADLSESetup."Schema Exported On" := 0DT;
-        ADLSESetup.Modify();
+        ADLSESetup.Modify(true);
         if GuiAllowed then
             Message(ClearSchemaExportedOnMsg);
 
@@ -179,7 +179,7 @@ codeunit 82569 "ADLSE Execution"
 
     [InherentPermissions(PermissionObjectType::Table, Database::"ADLSE Table Last Timestamp", 'X')]
     [InherentPermissions(PermissionObjectType::TableData, Database::"ADLSE Table Last Timestamp", 'R')]
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::GlobalTriggerManagement, 'OnAfterGetDatabaseTableTriggerSetup', '', true, true)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::GlobalTriggerManagement, OnAfterGetDatabaseTableTriggerSetup, '', true, true)]
     local procedure GetDatabaseTableTriggerSetup(TableId: Integer; var OnDatabaseInsert: Boolean; var OnDatabaseModify: Boolean; var OnDatabaseDelete: Boolean; var OnDatabaseRename: Boolean)
     var
         ADLSETableLastTimestamp: Record "ADLSE Table Last Timestamp";
@@ -195,7 +195,7 @@ codeunit 82569 "ADLSE Execution"
     [InherentPermissions(PermissionObjectType::Table, Database::"ADLSE Table Last Timestamp", 'X')]
     [InherentPermissions(PermissionObjectType::TableData, Database::"ADLSE Table Last Timestamp", 'R')]
     [InherentPermissions(PermissionObjectType::TableData, Database::"ADLSE Deleted Record", 'RI')]
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::GlobalTriggerManagement, 'OnAfterOnDatabaseDelete', '', true, true)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::GlobalTriggerManagement, OnAfterOnDatabaseDelete, '', true, true)]
     local procedure OnAfterOnDatabaseDelete(RecRef: RecordRef)
     var
         ADLSETableLastTimestamp: Record "ADLSE Table Last Timestamp";

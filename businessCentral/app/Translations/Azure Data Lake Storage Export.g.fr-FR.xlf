@@ -6787,10 +6787,10 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Setup - Action ClearDeletedRecordsList - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 4249570476 - Action 1894152308 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Removes the entries in the deleted record list that have already been exported. This should be done periodically to free up storage space. The codeunit ADLSE Clear Tracked Deletions may be invoked using a job queue entry for the same end.</source>
-          <target>[NAB: REVIEW]Removes the entries in the deleted record list that have already been exported. This should be done periodically to free up storage space. The codeunit ADLSE Clear Tracked Deletions may be invoked using a job queue entry for the same end.</target>
+          <source>Removes exported entries from the deleted record list. Perform this periodically to free up storage. You can automate this process with a job queue using the ADLSE Clear Tracked Deletions codeunit.</source>
+          <target>[NAB: REVIEW]Removes exported entries from the deleted record list. Perform this periodically to free up storage. You can automate this process with a job queue using the ADLSE Clear Tracked Deletions codeunit.</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Setup - Action ClearDeletedRecordsList - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4249570476 - Action 3413831632 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -6927,10 +6927,10 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Setup Fields - Control Field Class - Property OptionCaption</note>
         </trans-unit>
         <trans-unit id="Page 2467644067 - Control 1409525680 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the field class</source>
-          <target>[NAB: REVIEW]Specifies the field class</target>
+          <source>Specifies the field class.</source>
+          <target>[NAB: REVIEW]Specifies the field class.</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Setup Fields - Control Field Class - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 2467644067 - Control 4079677382 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -6941,10 +6941,10 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Setup Fields - Control Field Type - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2467644067 - Control 4079677382 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the field type</source>
-          <target>[NAB: REVIEW]Specifies the field type</target>
+          <source>Specifies the field type.</source>
+          <target>[NAB: REVIEW]Specifies the field type.</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Setup Fields - Control Field Type - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 2467644067 - Control 2990557594 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -6962,10 +6962,10 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Setup Fields - Control Obsolete State - Property OptionCaption</note>
         </trans-unit>
         <trans-unit id="Page 2467644067 - Control 2990557594 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the Obsolete State of the field</source>
-          <target>[NAB: REVIEW]Specifies the Obsolete State of the field</target>
+          <source>Specifies the Obsolete State of the field.</source>
+          <target>[NAB: REVIEW]Specifies the Obsolete State of the field.</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Setup Fields - Control Obsolete State - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 2467644067 - Action 2223207931 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -7032,10 +7032,10 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Setup Tables - Control FieldsChosen - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3887871207 - Control 3126421183 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Shows if any field has been chosen to be exported. Click on Choose Fields action to add fields to export.</source>
-          <target>[NAB: REVIEW]Shows if any field has been chosen to be exported. Click on Choose Fields action to add fields to export.</target>
+          <source>Specifies if any field has been chosen to be exported. Click on Choose Fields action to add fields to export.</source>
+          <target>[NAB: REVIEW]Specifies if any field has been chosen to be exported. Click on Choose Fields action to add fields to export.</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Setup Tables - Control FieldsChosen - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3887871207 - Control 488224429 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -7046,10 +7046,10 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Setup Tables - Control ADLSTableName - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3887871207 - Control 488224429 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The name of the entity corresponding to this table on the data lake. The value at the end indicates the table number in Dynamics 365 Business Central.</source>
-          <target>[NAB: REVIEW]The name of the entity corresponding to this table on the data lake. The value at the end indicates the table number in Dynamics 365 Business Central.</target>
+          <source>Specifies the name of the entity corresponding to this table on the data lake. The value at the end indicates the table number in Dynamics 365 Business Central.</source>
+          <target>[NAB: REVIEW]Specifies the name of the entity corresponding to this table on the data lake. The value at the end indicates the table number in Dynamics 365 Business Central.</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Setup Tables - Control ADLSTableName - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3887871207 - Control 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -7095,10 +7095,10 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Setup Tables - Control LastError - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3887871207 - Control 1739627064 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The timestamp of the record in this table that was exported last.</source>
-          <target>[NAB: REVIEW]The timestamp of the record in this table that was exported last.</target>
+          <source>Specifies the timestamp of the record in this table that was exported last.</source>
+          <target>[NAB: REVIEW]Specifies the timestamp of the record in this table that was exported last.</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Setup Tables - Control LastTimestamp - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3887871207 - Control 1739627064 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -7109,10 +7109,10 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Setup Tables - Control LastTimestamp - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3887871207 - Control 1929334827 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The timestamp of the deleted records in this table that was exported last.</source>
-          <target>[NAB: REVIEW]The timestamp of the deleted records in this table that was exported last.</target>
+          <source>Specifies the timestamp of the deleted records in this table that was exported last.</source>
+          <target>[NAB: REVIEW]Specifies the timestamp of the deleted records in this table that was exported last.</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Setup Tables - Control LastTimestampDeleted - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3887871207 - Control 1929334827 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -7130,10 +7130,10 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Setup Tables - Action AddTable - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3887871207 - Action 3293503457 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Add a table to be exported</source>
-          <target>[NAB: REVIEW]Add a table to be exported</target>
+          <source>Add a table to be exported.</source>
+          <target>[NAB: REVIEW]Add a table to be exported.</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Setup Tables - Action AddTable - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3887871207 - Action 2159590881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -7144,10 +7144,10 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Setup Tables - Action DeleteTable - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3887871207 - Action 2159590881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Removes a table that had been added to the list meant for export</source>
-          <target>[NAB: REVIEW]Removes a table that had been added to the list meant for export</target>
+          <source>Removes a table that had been added to the list meant for export.</source>
+          <target>[NAB: REVIEW]Removes a table that had been added to the list meant for export.</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Setup Tables - Action DeleteTable - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3887871207 - Action 4207383944 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -7158,10 +7158,10 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Setup Tables - Action ChooseFields - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3887871207 - Action 4207383944 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Select the fields of this table to be exported</source>
-          <target>[NAB: REVIEW]Select the fields of this table to be exported</target>
+          <source>Select the fields of this table to be exported.</source>
+          <target>[NAB: REVIEW]Select the fields of this table to be exported.</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Setup Tables - Action ChooseFields - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3887871207 - Action 685580383 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -7842,6 +7842,384 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">XmlPort BC2ADLS Import - Method OnPreXmlPort - NamedType ConfirmQuestionMsg</note>
+        </trans-unit>
+        <trans-unit id="Enum 1714891356 - EnumValue 2304286450 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>HTTP GET Method</source>
+          <target>[NAB: REVIEW]HTTP GET Method</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum ADLSE Http Method - EnumValue Get - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1714891356 - EnumValue 3838861371 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>HTTP PUT Method</source>
+          <target>[NAB: REVIEW]HTTP PUT Method</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum ADLSE Http Method - EnumValue Put - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1714891356 - EnumValue 2477294019 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>HTTP DELETE Method</source>
+          <target>[NAB: REVIEW]HTTP DELETE Method</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum ADLSE Http Method - EnumValue Delete - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1714891356 - EnumValue 3715279586 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>HTTP PATCH Method</source>
+          <target>[NAB: REVIEW]HTTP PATCH Method</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum ADLSE Http Method - EnumValue Patch - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1714891356 - EnumValue 3828687652 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>HTTP HEAD Method</source>
+          <target>[NAB: REVIEW]HTTP HEAD Method</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum ADLSE Http Method - EnumValue Head - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1220829098 - EnumValue 109158254 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Azure Data Lake</source>
+          <target>[NAB: REVIEW]Azure Data Lake</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum ADLSE Storage Type - EnumValue Azure Data Lake - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1220829098 - EnumValue 1008758011 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Microsoft fabric</source>
+          <target>[NAB: REVIEW]Microsoft fabric</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum ADLSE Storage Type - EnumValue Microsoft Fabric - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 436657212 - Control 2030644335 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>systemRowVersion</source>
+          <target>[NAB: REVIEW]systemRowVersion</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE CurrentSession API - Control systemRowVersion - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 436657212 - Control 2245436958 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>lastModifiedDateTime</source>
+          <target>[NAB: REVIEW]lastModifiedDateTime</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE CurrentSession API - Control lastModifiedDateTime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 97365624 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ADLSE Enum Translations</source>
+          <target>[NAB: REVIEW]ADLSE Enum Translations</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Enum Translations - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 97365624 - Control 1396603702 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Compliant Field Name</source>
+          <target>[NAB: REVIEW]Compliant Field Name</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Enum Translations - Control CompliantFieldName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1288508980 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ADLSE Enum Translations Lang</source>
+          <target>[NAB: REVIEW]ADLSE Enum Translations Lang</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Enum Translations Lang - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2653800543 - Control 2686962215 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>id</source>
+          <target>[NAB: REVIEW]id</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Field API - Control id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2653800543 - Control 2245436958 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>lastModifiedDateTime</source>
+          <target>[NAB: REVIEW]lastModifiedDateTime</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Field API - Control lastModifiedDateTime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2653800543 - Control 2030644335 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>system Row Version</source>
+          <target>[NAB: REVIEW]system Row Version</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Field API - Control systemRowVersion - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2176198930 - Control 2030644335 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>System Row Version</source>
+          <target>[NAB: REVIEW]System Row Version</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Run API - Control systemRowVersion - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4249570476 - Control 3383493608 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Process</source>
+          <target>[NAB: REVIEW]Process</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Setup - Control Category_Process - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3528784298 - Control 2030644335 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>System Row Version</source>
+          <target>[NAB: REVIEW]System Row Version</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Setup API v11 - Control systemRowVersion - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 917989771 - Control 2030644335 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>systemRowVersion</source>
+          <target>[NAB: REVIEW]systemRowVersion</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ADLSE Table API - Control systemRowVersion - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4003818636 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ADLSE Current Session</source>
+          <target>[NAB: REVIEW]ADLSE Current Session</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Current Session - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2785369961 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ADLSE Deleted Record</source>
+          <target>[NAB: REVIEW]ADLSE Deleted Record</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Deleted Record - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1001288161 - Field 1153821034 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the table that is compliant with Data Lake standards.</source>
+          <target>[NAB: REVIEW]Specifies the name of the table that is compliant with Data Lake standards.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Enum Translation - Field Compliant Table Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 1001288161 - Field 1634532550 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Compliant Field Name</source>
+          <target>[NAB: REVIEW]Compliant Field Name</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Enum Translation - Field Compliant Field Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 461144037 - Field 2273653569 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The language code.</source>
+          <target>[NAB: REVIEW]The language code.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Enum Translation Lang - Field Language Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 461144037 - Field 1153821034 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The name of the field that is compliant with Data Lake standards.</source>
+          <target>[NAB: REVIEW]The name of the field that is compliant with Data Lake standards.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Enum Translation Lang - Field Compliant Table Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 461144037 - Field 1634532550 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The name of the field that is compliant with Data Lake standards.</source>
+          <target>[NAB: REVIEW]The name of the field that is compliant with Data Lake standards.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Enum Translation Lang - Field Compliant Field Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 461144037 - Field 1802100194 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The caption of the enum value.</source>
+          <target>[NAB: REVIEW]The caption of the enum value.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Enum Translation Lang - Field Enum Value Caption - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 4088819015 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ADLSE Field</source>
+          <target>[NAB: REVIEW]ADLSE Field</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Field - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4088819015 - Field 869342929 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the ID of the field to be exported.</source>
+          <target>[NAB: REVIEW]Specifies the ID of the field to be exported.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Field - Field Field ID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 4088819015 - Field 2891538263 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the field will be exported.</source>
+          <target>[NAB: REVIEW]Specifies if the field will be exported.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Field - Field Enabled - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 4088819015 - Field 2780874720 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the field to be exported.</source>
+          <target>[NAB: REVIEW]Specifies the name of the field to be exported.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Field - Field FieldCaption - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 938701546 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ADLSE Run</source>
+          <target>[NAB: REVIEW]ADLSE Run</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Run - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 938701546 - Field 269761521 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the state of the execution of export.</source>
+          <target>[NAB: REVIEW]Specifies the state of the execution of export.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Run - Field State - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 938701546 - Field 2248886284 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the error if the execution had any.</source>
+          <target>[NAB: REVIEW]Specifies the error if the execution had any.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Run - Field Error - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 938701546 - Field 816905803 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies when the export was started.</source>
+          <target>[NAB: REVIEW]Specifies when the export was started.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Run - Field Started - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 938701546 - Field 4241106586 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies when the export was started.</source>
+          <target>[NAB: REVIEW]Specifies when the export was started.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Run - Field Ended - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 4249570476 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ADLSE Setup</source>
+          <target>[NAB: REVIEW]ADLSE Setup</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4249570476 - Field 2588032914 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the storage account.</source>
+          <target>[NAB: REVIEW]Specifies the name of the storage account.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Setup - Field Account Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 4249570476 - Field 394351785 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the container where the data is going to be uploaded. Please refer to constraints on container names at https://docs.microsoft.com/en-us/rest/api/storageservices/naming-and-referencing-containers--blobs--and-metadata.</source>
+          <target>[NAB: REVIEW]Specifies the name of the container where the data is going to be uploaded. Please refer to constraints on container names at https://docs.microsoft.com/en-us/rest/api/storageservices/naming-and-referencing-containers--blobs--and-metadata.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Setup - Field Container - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 4249570476 - Field 710554475 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the maximum size of the upload for each block of data in MiBs. A large value will reduce the number of iterations to upload the data but may interfear with the performance of other processes running on this environment.</source>
+          <target>[NAB: REVIEW]Specifies the maximum size of the upload for each block of data in MiBs. A large value will reduce the number of iterations to upload the data but may interfear with the performance of other processes running on this environment.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Setup - Field MaxPayloadSizeMiB - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 4249570476 - Field 3801871525 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the format in which to store the exported data in the 'data' CDM folder. The Parquet format is recommended for storing the data with the best fidelity.</source>
+          <target>[NAB: REVIEW]Specifies the format in which to store the exported data in the 'data' CDM folder. The Parquet format is recommended for storing the data with the best fidelity.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Setup - Field DataFormat - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 4249570476 - Field 2183130790 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the translations for the enums used in the selected tables.</source>
+          <target>[NAB: REVIEW]Specifies the translations for the enums used in the selected tables.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Setup - Field Emit telemetry - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 4249570476 - Field 864596981 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies that the records are not sorted as per their row version before exporting them to the lake. Enabling this may interfear with how incremental data is pushed to the lake in subsequent export runs- please refer to the documentation.</source>
+          <target>[NAB: REVIEW]Specifies that the records are not sorted as per their row version before exporting them to the lake. Enabling this may interfear with how incremental data is pushed to the lake in subsequent export runs- please refer to the documentation.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Setup - Field Skip Timestamp Sorting On Recs - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 4249570476 - Field 613473307 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the type of storage type to use.</source>
+          <target>[NAB: REVIEW]Specifies the type of storage type to use.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Setup - Field Storage Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 4249570476 - Field 3663515799 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the Workspace where the data is going to be uploaded. This can be a name or a GUID.</source>
+          <target>[NAB: REVIEW]Specifies the name of the Workspace where the data is going to be uploaded. This can be a name or a GUID.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Setup - Field Workspace - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 4249570476 - Field 3312182529 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the Lakehouse where the data is going to be uploaded. This can be a name or a GUID.</source>
+          <target>[NAB: REVIEW]Specifies the name of the Lakehouse where the data is going to be uploaded. This can be a name or a GUID.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Setup - Field Lakehouse - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 4249570476 - Field 2653012956 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translations.</source>
+          <target>[NAB: REVIEW]Translations.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Setup - Field Translations - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 4249570476 - Field 373671349 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the enums will be exported as integers instead of strings. This is useful if you want to use the enums in Power BI.</source>
+          <target>[NAB: REVIEW]Specifies if the enums will be exported as integers instead of strings. This is useful if you want to use the enums in Power BI.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Setup - Field Export Enum as Integer - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 4249570476 - Field 921554209 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the table will be deleted if a reset of the table is done.</source>
+          <target>[NAB: REVIEW]Specifies if the table will be deleted if a reset of the table is done.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Setup - Field Delete Table - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 4249570476 - Field 2670080655 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the column DeliveredDateTime will be added to the CSV export file.</source>
+          <target>[NAB: REVIEW]Specifies if the column DeliveredDateTime will be added to the CSV export file.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Setup - Field Delivered DateTime - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 4249570476 - Field 3705643805 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the company for the export of the database tables.</source>
+          <target>[NAB: REVIEW]Specifies the company for the export of the database tables.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Setup - Field Export Company Database Tables - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 3041034051 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ADLSE Table</source>
+          <target>[NAB: REVIEW]ADLSE Table</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Table - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3041034051 - Field 2891538263 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the state of the table. Set this checkmark to export this table, otherwise not.</source>
+          <target>[NAB: REVIEW]Specifies the state of the table. Set this checkmark to export this table, otherwise not.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Table - Field Enabled - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 842758815 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ADLSE Table Last Timestamp</source>
+          <target>[NAB: REVIEW]ADLSE Table Last Timestamp</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table ADLSE Table Last Timestamp - Property Caption</note>
         </trans-unit>
       </group>
     </body>
